@@ -9,7 +9,7 @@ module ShutterstockRuby
 
     # to use similar you need to create an image first
     def self.create(base64_image, options = {})
-      JSON.parse(self.post('/images', { base64_image: base64_image }, options))
+      JSON.parse(self.post('/images', { base64_image: base64_image }.to_json, options))
     end
 
     def self.similar(id, options = {})
