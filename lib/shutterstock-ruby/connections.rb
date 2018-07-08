@@ -12,6 +12,8 @@ module ShutterstockRuby
     def post(path, body, options = {})
       ensure_credentials!
 
+      options[:content_type] = "application/json"
+
       RestClient.post(build_url(path), body, options)
     end
 
