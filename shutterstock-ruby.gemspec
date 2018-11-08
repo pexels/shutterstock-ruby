@@ -1,4 +1,6 @@
 # -*- encoding: utf-8 -*-
+require 'date'
+
 $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
